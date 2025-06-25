@@ -7,8 +7,6 @@ const slides = [
   { type: 'img', src: '/slide2.jpg', alt: 'Ảnh kỷ niệm 2', caption: 'Thi xong thì mình đi quẩy xả stress nhá bé ơi! Anh dẫn em đi khắp phố phường, chụp thật nhiều bức ảnh đẹp như này nữa nha 🥰📸' },
   { type: 'img', src: '/slide3.jpg', alt: 'Ảnh kỷ niệm 3', caption: 'Làm bài hết mình nha bé iu của anh. Để mà hai đứa mình sẽ có thêm nhiều khoảng khắc bình yên như thế này nữa nhé 🥰. IU EM💞💞💞' },
   { type: 'video', src: '/video.mp4', alt: 'Video lời chúc', caption: 'Lời chúc đặc biệt dành riêng cho em yêu nè @@@.' },
-  // Slide cuối: Vé đi chơi
-  { type: 'ticket', src: '/src/assets/ticket.jpg', alt: 'Vé đi chơi', caption: 'Vé đi chơi đặc biệt dành cho em!\nHết thi mình cùng nhau đi chơi thật vui nhé!\nĐịa điểm: Em chọn, Anh chiều!\nNgày: Sau khi em thi xong ❤️' },
 ];
 
 function SlideShow({ onBack, audioRef, playing, setPlaying }) {
@@ -121,20 +119,13 @@ function SlideShow({ onBack, audioRef, playing, setPlaying }) {
                 boxShadow: '0 2px 16px #e0e0e0'
               }}
             />
-          ) : slide.type === 'ticket' ? (
-            <div className="ticket-card">
-              <img src={slide.src} alt={slide.alt} className="ticket-img" style={{maxWidth: '100%', marginBottom: '1rem', borderRadius: '12px', boxShadow: '0 2px 12px #e0e0e0'}} />
-              <div className="ticket-title">🎫 Vé đi chơi đặc biệt 🎫</div>
-              <div className="ticket-content">{typedCaption.split('\n').map((line, i) => <div key={i}>{line}</div>)}</div>
-              <div className="ticket-footer">(Đưa vé này cho anh để nhận phần thưởng nhé!)</div>
-            </div>
           ) : null}
           <div className="slide-caption typewriter" style={{
             color: '#e91e63',
             textShadow: '0 3px 16px #ffd1e6, 0 1px 0 #fff3fa',
             marginBottom: '1.3rem',
             fontWeight: 400
-          }}>{slide.type !== 'ticket' && typedCaption}</div>
+          }}>{typedCaption}</div>
           <div className="slide-controls" style={{ marginTop: '0.7rem' }}>
             <button onClick={prev}>◀</button>
             <button onClick={onBack}>Quay lại</button>
