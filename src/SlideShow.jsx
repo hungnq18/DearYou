@@ -3,9 +3,9 @@ import FloatingHearts from './FloatingHearts';
 import React, { useEffect, useRef, useState } from 'react';
 
 const slides = [
-  { type: 'img', src: '/src/assets/slide1.jpg', alt: 'Ảnh kỷ niệm 1', caption: 'Em rạng rỡ như thế này, thì thi cử chỉ là chuyện nhỏ thôi, vì em đã luôn tuyệt vời trong mắt anh rồi 💞' },
-  { type: 'img', src: '/src/assets/slide2.jpg', alt: 'Ảnh kỷ niệm 2', caption: 'Thi xong thì mình đi quẩy xả stress nhá bé ơi! Anh dẫn em đi khắp phố phường, chụp thật nhiều bức ảnh đẹp như này nữa nha 🥰📸' },
-  { type: 'img', src: '/src/assets/slide3.jpg', alt: 'Ảnh kỷ niệm 3', caption: 'Làm bài hết mình nha bé iu của anh. Để mà hai đứa mình sẽ có thêm nhiều khoảng khắc bình yên như thế này nữa nhé 🥰. IU EM💞💞💞' },
+  { type: 'img', src: '/slide1.jpg', alt: 'Ảnh kỷ niệm 1', caption: 'Em rạng rỡ như thế này, thì thi cử chỉ là chuyện nhỏ thôi, vì em đã luôn tuyệt vời trong mắt anh rồi 💞' },
+  { type: 'img', src: '/slide2.jpg', alt: 'Ảnh kỷ niệm 2', caption: 'Thi xong thì mình đi quẩy xả stress nhá bé ơi! Anh dẫn em đi khắp phố phường, chụp thật nhiều bức ảnh đẹp như này nữa nha 🥰📸' },
+  { type: 'img', src: '/slide3.jpg', alt: 'Ảnh kỷ niệm 3', caption: 'Làm bài hết mình nha bé iu của anh. Để mà hai đứa mình sẽ có thêm nhiều khoảng khắc bình yên như thế này nữa nhé 🥰. IU EM💞💞💞' },
   { type: 'video', src: '/video.mp4', alt: 'Video lời chúc', caption: 'Lời chúc đặc biệt dành riêng cho em yêu nè @@@.' },
   // Slide cuối: Vé đi chơi
   { type: 'ticket', src: '/src/assets/ticket.jpg', alt: 'Vé đi chơi', caption: 'Vé đi chơi đặc biệt dành cho em!\nHết thi mình cùng nhau đi chơi thật vui nhé!\nĐịa điểm: Em chọn, Anh chiều!\nNgày: Sau khi em thi xong ❤️' },
