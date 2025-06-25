@@ -57,7 +57,14 @@ function App() {
   }, []);
 
   return (
-    <div className="app-bg-wrapper" style={{minHeight: '100vh', minWidth: '100vw', width: '100vw', height: '100vh', position: 'relative', overflow: 'hidden'}}>
+    <div className="app-bg-wrapper" style={{
+      minHeight: '100vh',
+      minWidth: '100vw',
+      width: '100vw',
+      height: '100vh',
+      position: 'relative',
+      overflow: 'hidden'
+    }}>
       <audio ref={audioRef} src="/musicLove.mp3" autoPlay loop />
       <MusicButton audioRef={audioRef} playing={playing} setPlaying={setPlaying} disabled={false} />
       {!showCard ? (

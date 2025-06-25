@@ -194,7 +194,7 @@ body, html, #root {
   padding: 0;
   border: none;
   box-shadow: none;
-  background: none;
+  background: linear-gradient(135deg, #ffe0f0 0%, #ffd6ec 100%) !important;
 }
 
 body::before {
