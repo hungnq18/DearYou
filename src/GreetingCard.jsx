@@ -1,9 +1,8 @@
-import FloatingHearts from './FloatingHearts';
 
 function GreetingCard({ onNext, flip }) {
   return (
     <div className="greeting-bg">
-      <FloatingHearts />
+      {/* <FloatingHearts /> */}
       <div className={`greeting-card${flip ? ' flip' : ''}`}>
         <div className="hearts">
           <span className="heart">❤️</span>

@@ -1,14 +1,10 @@
-import FloatingHearts from './FloatingHearts';
+// import FloatingHearts from './FloatingHearts';
 // import MusicButton from './MusicButton';
 import React, { useEffect, useRef, useState } from 'react';
 
 const slides = [
-  { type: 'img', src: '/slide1.jpg', alt: 'Ảnh kỷ niệm 1', caption: 'Em rạng rỡ như thế này, thì thi cử chỉ là chuyện nhỏ thôi, vì em đã luôn tuyệt vời trong mắt anh rồi 💞' },
-  { type: 'img', src: '/slide2.jpg', alt: 'Ảnh kỷ niệm 2', caption: 'Thi xong thì mình đi quẩy xả stress nhá bé ơi! Anh dẫn em đi khắp phố phường, chụp thật nhiều bức ảnh đẹp như này nữa nha 🥰📸' },
-  { type: 'img', src: '/slide3.jpg', alt: 'Ảnh kỷ niệm 3', caption: 'Làm bài hết mình nha bé iu của anh. Để mà hai đứa mình sẽ có thêm nhiều khoảng khắc bình yên như thế này nữa nhé 🥰. IU EM💞💞💞' },
-  { type: 'video', src: '/video.mp4', alt: 'Video lời chúc', caption: 'Lời chúc đặc biệt dành riêng cho em yêu nè @@@.' },
-  // Slide cuối: Vé đi chơi
-  { type: 'ticket', src: 'ticket.jpg', alt: 'Vé đi chơi', caption: 'Vé đi chơi đặc biệt dành cho em!\nHết thi mình cùng nhau đi chơi thật vui nhé!\nĐịa điểm: Em chọn, Anh chiều!\nNgày: Sau khi em thi xong ❤️' },
+  { type: 'img', src: 'https://res.cloudinary.com/dijayprrw/image/upload/v1767452909/bcf510b3-fe0d-41d1-970d-e2988dd0dd89_h9jw5l.jpg', alt: 'Ảnh kỷ niệm 1', caption: '' },
+  
 ];
 
 function SlideShow({ onBack, audioRef, playing, setPlaying }) {
@@ -78,7 +74,7 @@ function SlideShow({ onBack, audioRef, playing, setPlaying }) {
       {/* <MusicButton audioRef={audioRef} playing={playing} setPlaying={setPlaying} disabled={slide.type === 'video'} /> */}
       <audio ref={typeAudioRef} src="/typewriter.mp3" preload="auto" style={{ display: 'none' }} />
       <div className="slideshow-bg">
-        {typedCaption.length === (slide.caption || '').length && <FloatingHearts />}
+        {/* {typedCaption.length === (slide.caption || '').length && <FloatingHearts />} */}
         <div className="slideshow-card">
           <h2 className="slideshow-title" style={{
             textAlign: 'center',
@@ -91,7 +87,7 @@ function SlideShow({ onBack, audioRef, playing, setPlaying }) {
             color: '#e91e63',
             textShadow: '0 3px 16px #ffd1e6, 0 1px 0 #fff3fa',
             transform: 'skew(-3deg, 1deg)'
-          }}>ĐỘNG LỰC CHO BÉ IU</h2>
+          }}></h2>
           {slide.type === 'img' ? (
             <img 
               src={slide.src} 

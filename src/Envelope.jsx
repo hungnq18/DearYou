@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import FloatingHearts from './FloatingHearts';
+// import FloatingHearts from './FloatingHearts';
 
 function Envelope({ onOpen }) {
   const [open, setOpen] = useState(false);
@@ -9,7 +9,7 @@ function Envelope({ onOpen }) {
   };
   return (
     <div className="envelope-bg">
-      <FloatingHearts />
+      {/* <FloatingHearts /> */}
       <div className="envelope-guide-container">
         <div className="envelope-guide-top">Chạm vào trái tim để mở phong bì nhé!</div>
         <div className="envelope-arrow">
